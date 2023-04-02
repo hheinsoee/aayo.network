@@ -8,25 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= info()->site->name; ?></title>
     <meta name="description" content="<%= meta.description %> ">
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
 
 
-    <script src="/assets/jquery/jquery-3.6.1.min.js"></script>
+    <script src="./assets/jquery/jquery-3.6.1.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
     <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
 
 
-    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="/assets/style.css">
-    <script src="/assets/script.js"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/script.js"></script>
 </head>
 <?php include(__DIR__ . '/components/nav.php'); ?>
 
 <body>
     <div style="
-    background-image:url('/assets/images/266201492_3104429416537896_5734814137305973195_n.jpg');
+    background-image:url('./assets/images/266201492_3104429416537896_5734814137305973195_n.jpg');
     background-size:cover;
     background-position:center;
     ">
@@ -81,7 +81,7 @@
         </div>
     </section>
     <div style="
-    background-image:url('/assets/images/271857309_3141961019451402_3900946283840371728_n.jpg');
+    background-image:url('./assets/images/271857309_3141961019451402_3900946283840371728_n.jpg');
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
