@@ -25,85 +25,52 @@
 
 <body>
     <?php include(__DIR__ . '/components/nav.php'); ?>
-    <div style="
-    background-image:url('./assets/images/341490543_247394604616567_8412264122249967400_n.jpg');
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-    ">
-        <div class="text-white">
-            <div class="container p-3" style="
-    display:flex;
-    flex-direction:column;
-    height:65vh;">
-                <h1 class="h1" style="font-size: 8vmin;"><?= info()->org->name; ?></h1>
-                <div class="card-text fs-4 fw-lighter glass ms-auto px-2 text-end"><?= info()->org->vission; ?></div>
-            </div>
-            <div class="dark-t glass mt-5">
-                <div style="background:linear-gradient(transparent, white);" class="pb-5">
-                    <section class="container p-5">
-                        <center>
-                            <h2>mission</h2>
-                        </center>
-                        <ul class="row row-cols-1 row-cols-md-3 gx-5 ">
-                            <?php
-                            foreach (info()->org->mission as $m) {
-                            ?>
-                                <li class="px-4">
-                                    <?= $m; ?>
-                                </li>
-                            <?php
-                            }
-                            ?>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php include(__DIR__ . '/components/slider.php'); ?>
+    <div class="bg-white">
 
-    <section class="container-sm py-5 my-5">
-        <center>
-            <?php
-            foreach (info()->org->values as $v) {
-            ?>
-                <div class="chip dark-t text-primary fs-3"><?= $v; ?></div>
-            <?php
-            }
-            ?>
-        </center>
-    </section>
-    <section class="container py-5 my-5">
-        <h2>background</h2>
-        <div class="read">
-            <p><?= info()->org->background; ?></p>
-        </div>
-    </section>
-    <div style="
-    background-image:url('./assets/images/341679906_593278749422171_8330622252483739833_n.jpg');
+        <section class="container-sm py-5 mb-5">
+            <center>
+                <?php
+                foreach (info()->org->values as $v) {
+                ?>
+                    <div class="chip dark-t text-primary fs-3"><?= $v; ?></div>
+                <?php
+                }
+                ?>
+            </center>
+        </section>
+        <section class="container py-5 my-5">
+            <h2>background</h2>
+            <div class="read">
+                <p><?= info()->org->background; ?></p>
+            </div>
+        </section>
+        <div style="
+    background-image:url('./assets/images/275391264_966778570662298_5008541774799580137_n.jpg');
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
     " class="mt-5">
-        <div class="white-_g"></div>
-        <div class="dark-t text-white py-5">
-            <section class="container-sm mt-5 py-5" style="max-width: 500px;">
-                <h2>Network’s member organizations</h2>
-                <div class="glass p-3 b_t b_b">
-                    <table class="table text-white">
-                        <?php
-                        foreach (info()->org->members as $m) {
-                        ?>
-                            <tr>
-                                <td><?= $m[0] ?></td>
-                                <td><?= $m[1] ?></td>
-                            </tr>
-                        <?php
-                        }
-                        ?>
-                    </table>
-                </div>
-            </section>
+            <div class="white-_g"></div>
+            <div class="dark-t text-white py-5">
+                <section class="container-sm mt-5 py-5" style="max-width: 500px;">
+                    <h2>Network’s member organizations</h2>
+                    <div class="glass p-3 b_t b_b">
+                        <table class="table text-white">
+                            <?php
+                            foreach (info()->org->members as $m) {
+                            ?>
+                                <tr>
+                                    <td><?= $m[0] ?></td>
+                                    <td><?= $m[1] ?></td>
+                                </tr>
+                            <?php
+                            }
+                            ?>
+                        </table>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
     <?php include(__DIR__ . '/components/footer.php'); ?>
