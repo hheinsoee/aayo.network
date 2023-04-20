@@ -26,22 +26,21 @@
 <body>
     <?php include(__DIR__ . '/components/nav.php'); ?>
     <div style="
-    background-image:url('./assets/images/266201492_3104429416537896_5734814137305973195_n.jpg');
+    background-image:url('./assets/images/341490543_247394604616567_8412264122249967400_n.jpg');
     background-size:cover;
     background-position:center;
+    background-attachment:fixed;
     ">
-        <div class="text-white" style="
+        <div class="text-white">
+            <div class="container p-3" style="
     display:flex;
-    min-height:800px;
     flex-direction:column;
-    justify-content:flex-end;
-    ">
-            <div>
-                <div class="container my-5 py-4">
-                    <h1 class="h1 p-4" style="font-size: 6vmin;"><?= info()->org->name; ?></h1>
-                    <p class="card-text p-4"><?= info()->org->vission; ?></p>
-                </div>
-                <div class="dark-t glass mt-5">
+    height:65vh;">
+                <h1 class="h1" style="font-size: 8vmin;"><?= info()->org->name; ?></h1>
+                <div class="card-text fs-4 fw-lighter glass ms-auto px-2 text-end"><?= info()->org->vission; ?></div>
+            </div>
+            <div class="dark-t glass mt-5">
+                <div style="background:linear-gradient(transparent, white);" class="pb-5">
                     <section class="container p-5">
                         <center>
                             <h2>mission</h2>
@@ -81,13 +80,13 @@
         </div>
     </section>
     <div style="
-    background-image:url('./assets/images/271857309_3141961019451402_3900946283840371728_n.jpg');
+    background-image:url('./assets/images/341679906_593278749422171_8330622252483739833_n.jpg');
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
     " class="mt-5">
         <div class="white-_g"></div>
-        <div class="dark-t text-white p-2">
+        <div class="dark-t text-white py-5">
             <section class="container-sm mt-5 py-5" style="max-width: 500px;">
                 <h2>Network’s member organizations</h2>
                 <div class="glass p-3 b_t b_b">
