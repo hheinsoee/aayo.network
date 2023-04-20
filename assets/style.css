@@ -1,14 +1,15 @@
 :root{
-    --t:rgba(143, 143, 143, 0.3)
+    --t:hsla(var(--bs-primary-h) var(--bs-s) var(--bs-l) / 20%)
 }
 p{
     text-indent: 0.6in;
 }
+a{color: inherit!important;}
 .chip {
     display: inline-flex;
     align-items: center;
     border-radius: 100px;
-    padding: 5px 10px;
+    padding: 0.5rem 2rem;
     margin: 5px;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.075);
 }
@@ -39,4 +40,9 @@ p{
 }
 .glass{
     backdrop-filter: blur(20px);
+}
+.b_t{
+    border-top: 4px solid var(--bs-primary);
+}.b_b{
+    border-bottom: 4px solid var(--bs-primary);
 }

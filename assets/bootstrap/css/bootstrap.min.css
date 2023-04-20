@@ -44,8 +44,8 @@
     /* --bs-primary-h: 300deg; */
     /* --bs-primary-h: 276deg; */
     --bs-primary-h: 215deg;
-    --bs-s: 75%;
-    --bs-l: 45%;
+    --bs-s: 45%;
+    --bs-l: 35%;
     --bs-secondary-h: calc(var(--bs-primary-h) - 45deg);
 
     --bs-light-h: 25;

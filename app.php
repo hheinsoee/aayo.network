@@ -22,9 +22,9 @@
     <link rel="stylesheet" href="./assets/style.css">
     <script src="./assets/script.js"></script>
 </head>
-<?php include(__DIR__ . '/components/nav.php'); ?>
 
 <body>
+    <?php include(__DIR__ . '/components/nav.php'); ?>
     <div style="
     background-image:url('./assets/images/266201492_3104429416537896_5734814137305973195_n.jpg');
     background-size:cover;
@@ -68,7 +68,7 @@
             <?php
             foreach (info()->org->values as $v) {
             ?>
-                <div class="chip bg-primary text-white"><?= $v; ?></div>
+                <div class="chip dark-t text-primary fs-3"><?= $v; ?></div>
             <?php
             }
             ?>
@@ -85,12 +85,12 @@
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
-    " class="my-5">
+    " class="mt-5">
         <div class="white-_g"></div>
         <div class="dark-t text-white p-2">
-            <section class="container-sm my-5 py-5" style="max-width: 500px;">
+            <section class="container-sm mt-5 py-5" style="max-width: 500px;">
                 <h2>Network’s member organizations</h2>
-                <div class="glass p-3">
+                <div class="glass p-3 b_t b_b">
                     <table class="table text-white">
                         <?php
                         foreach (info()->org->members as $m) {
@@ -107,6 +107,7 @@
             </section>
         </div>
     </div>
+    <?php include(__DIR__ . '/components/footer.php'); ?>
 </body>
 
 </html>
